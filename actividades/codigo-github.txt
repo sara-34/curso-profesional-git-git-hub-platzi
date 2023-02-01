@@ -1,0 +1,611 @@
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ pwd
+/c/Users/Sara/proyecto1
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git init
+Initialized empty Git repository in C:/Users/Sara/proyecto1/.git/
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ ls -al
+total 44
+drwxr-xr-x 1 Sara 197121 0 Feb  1 16:41 ./
+drwxr-xr-x 1 Sara 197121 0 Feb  1 16:27 ../
+drwxr-xr-x 1 Sara 197121 0 Feb  1 16:41 .git/
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ code
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hola mundo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git add .
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Hola mundo.txt
+
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git rm --cached Hola mundo.txt
+fatal: pathspec 'Hola' did not match any files
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git rm --cached "Hola mundo.txt"
+rm 'Hola mundo.txt'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hola mundo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git add "Hola mundo.txt"
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Hola mundo.txt
+
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git commit -m "este es el primer commit"
+[main (root-commit) efec8bd] este es el primer commit
+ 1 file changed, 5 insertions(+)
+ create mode 100644 Hola mundo.txt
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=main
+user.email=saritaariaslondono12@gmail.com
+user.name=sara-34
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$  git status
+On branch main
+nothing to commit, working tree clean
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ cat "Hola mundo.txt"
+Hola mundo
+
+Febrero 1 2023
+
+miercoles 4:44 pm
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git log "Hola mundo.txt"
+commit efec8bdad96d49ffb799fabbbd766ea40538874e (HEAD -> main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 16:51:06 2023 -0500
+
+    este es el primer commit
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git show "Hola mundo.txt"
+commit efec8bdad96d49ffb799fabbbd766ea40538874e (HEAD -> main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 16:51:06 2023 -0500
+
+    este es el primer commit
+
+diff --git a/Hola mundo.txt b/Hola mundo.txt
+new file mode 100644
+index 0000000..272610e
+--- /dev/null
++++ b/Hola mundo.txt
+@@ -0,0 +1,5 @@
++Hola mundo
++
++Febrero 1 2023
++
++miercoles 4:44 pm
+\ No newline at end of file
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ pwd
+/c/Users/Sara/proyecto1
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ ls
+'Hola mundo.txt'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ code "Hola mundo.txt"
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git add .
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git commit -m "Agregando"
+[main 4974c55] Agregando
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git commit
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hola mundo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git commit -m "Hola mundo"
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hola mundo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git add .
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Hola mundo.txt
+
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git show
+commit 4974c5518fff7da0e9707ce4a62906400b8695ee (HEAD -> main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 17:17:35 2023 -0500
+
+    Agregando
+
+diff --git a/Hola mundo.txt b/Hola mundo.txt
+index 272610e..1d62543 100644
+--- a/Hola mundo.txt
++++ b/Hola mundo.txt
+@@ -1,5 +1,9 @@
+-Hola mundo
++Hola mundo como estas
+
+-Febrero 1 2023
++Febrero 12 2023
+
+-miercoles 4:44 pm
+\ No newline at end of file
++miercoles 4:44 pm
++
++2edje
++cjvfvflkvfr
++cfvkfjvr
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git log "Hola mundo.txt"
+commit 4974c5518fff7da0e9707ce4a62906400b8695ee (HEAD -> main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 17:17:35 2023 -0500
+
+    Agregando
+
+commit efec8bdad96d49ffb799fabbbd766ea40538874e
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 16:51:06 2023 -0500
+
+    este es el primer commit
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git diff efec8bdad96d49ffb799fabbbd766ea40538874e
+diff --git a/Hola mundo.txt b/Hola mundo.txt
+index 272610e..d94422d 100644
+--- a/Hola mundo.txt
++++ b/Hola mundo.txt
+@@ -1,5 +1,10 @@
+-Hola mundo
++Hola mundo como estas
+
+-Febrero 1 2023
++Febrero 12 2023
+
+-miercoles 4:44 pm
+\ No newline at end of file
++miercoles 4:44 pm
++
++2edje
++cjvfvflkvfr
++cfvkfjvr
++hoy es el ceo de plazi
+\ No newline at end of file
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git diff efec8bdad96d49ffb799fabbbd766ea40538874e ^C
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git diff efec8bdad96d49ffb799fabbbd766ea40538874e 4974c5518fff7da0e9707ce4a62906400b8695ee
+diff --git a/Hola mundo.txt b/Hola mundo.txt
+index 272610e..1d62543 100644
+--- a/Hola mundo.txt
++++ b/Hola mundo.txt
+@@ -1,5 +1,9 @@
+-Hola mundo
++Hola mundo como estas
+
+-Febrero 1 2023
++Febrero 12 2023
+
+-miercoles 4:44 pm
+\ No newline at end of file
++miercoles 4:44 pm
++
++2edje
++cjvfvflkvfr
++cfvkfjvr
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git log
+commit 4974c5518fff7da0e9707ce4a62906400b8695ee (HEAD -> main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 17:17:35 2023 -0500
+
+    Agregando
+
+commit efec8bdad96d49ffb799fabbbd766ea40538874e
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 16:51:06 2023 -0500
+
+    este es el primer commit
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git reset 4974c5518fff7da0e9707ce4a62906400b8695ee --hard
+HEAD is now at 4974c55 Agregando
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ cat "Hola mundo.txt"
+Hola mundo como estas
+
+Febrero 12 2023
+
+miercoles 4:44 pm
+
+2edje
+cjvfvflkvfr
+cfvkfjvr
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git log
+commit 4974c5518fff7da0e9707ce4a62906400b8695ee (HEAD -> main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 17:17:35 2023 -0500
+
+    Agregando
+
+commit efec8bdad96d49ffb799fabbbd766ea40538874e
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 16:51:06 2023 -0500
+
+    este es el primer commit
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ code
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        articulo.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ ls
+'Hola mundo.txt'   articulo.html
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git add .
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ ls
+'Hola mundo.txt'   articulo.html
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   articulo.html
+
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   articulo.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   articulo.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        css/
+
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git diff
+diff --git a/articulo.html b/articulo.html
+index a21200f..c10824f 100644
+--- a/articulo.html
++++ b/articulo.html
+@@ -1,6 +1,7 @@
+ <html>
+     <head>
+         <title>El titulo del post</title>
++        <link rel="stylesheet" href="css/estilos.css"/>
+     </head>
+     <body>
+         <h1>Aqui vamos hacer un blog post</h1>
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git add .
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   articulo.html
+        new file:   css/estilos.css
+
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git commit -m "mi proyecto real con html y css"
+[main 1c03a4e] mi proyecto real con html y css
+ 2 files changed, 17 insertions(+)
+ create mode 100644 articulo.html
+ create mode 100644 css/estilos.css
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git log
+commit 1c03a4e50fb52fb2ab361086edfcd5e567fc983f (HEAD -> main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 18:09:38 2023 -0500
+
+    mi proyecto real con html y css
+
+commit 4974c5518fff7da0e9707ce4a62906400b8695ee
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 17:17:35 2023 -0500
+
+    Agregando
+
+commit efec8bdad96d49ffb799fabbbd766ea40538874e
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 16:51:06 2023 -0500
+
+    este es el primer commit
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git add .
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git commit -m "cambio de vida"
+[main dc529e4] cambio de vida
+ 1 file changed, 2 insertions(+)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git add .
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git commit -m "cambio de su maestria"
+[main 48e1e04] cambio de su maestria
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git log
+commit 48e1e04a3ed6093dc9f58aff538002f062a33706 (HEAD -> main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 18:11:53 2023 -0500
+
+    cambio de su maestria
+
+commit dc529e4a31ff085d7279efaf00059b98d7956a5b
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 18:11:13 2023 -0500
+
+    cambio de vida
+
+commit 1c03a4e50fb52fb2ab361086edfcd5e567fc983f
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 18:09:38 2023 -0500
+
+    mi proyecto real con html y css
+
+commit 4974c5518fff7da0e9707ce4a62906400b8695ee
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 17:17:35 2023 -0500
+
+    Agregando
+
+commit efec8bdad96d49ffb799fabbbd766ea40538874e
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 16:51:06 2023 -0500
+
+    este es el primer commit
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git log -- stat
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git log --stat
+commit 48e1e04a3ed6093dc9f58aff538002f062a33706 (HEAD -> main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 18:11:53 2023 -0500
+
+    cambio de su maestria
+
+ Hola mundo.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit dc529e4a31ff085d7279efaf00059b98d7956a5b
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 18:11:13 2023 -0500
+
+    cambio de vida
+
+ Hola mundo.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 1c03a4e50fb52fb2ab361086edfcd5e567fc983f
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 18:09:38 2023 -0500
+
+    mi proyecto real con html y css
+
+ articulo.html   | 10 ++++++++++
+ css/estilos.css |  7 +++++++
+ 2 files changed, 17 insertions(+)
+
+commit 4974c5518fff7da0e9707ce4a62906400b8695ee
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 17:17:35 2023 -0500
+
+    Agregando
+
+ Hola mundo.txt | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+
+commit efec8bdad96d49ffb799fabbbd766ea40538874e
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 16:51:06 2023 -0500
+
+    este es el primer commit
+
+ Hola mundo.txt | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git checkout efec8bdad96d49ffb799fabbbd766ea40538874e "Hola mundo.txt"
+Updated 1 path from 82eefc8
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Hola mundo.txt
+
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git checkout master "Hola mundo.txt"
+error: pathspec 'master' did not match any file(s) known to git
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git checkout main "Hola mundo.txt"
+Updated 1 path from e96f684
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$

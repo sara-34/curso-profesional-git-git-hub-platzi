@@ -609,3 +609,881 @@ Updated 1 path from e96f684
 
 Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
 $
+febrero 02/ 2023
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git show
+commit bf4c66154095eb889fd0db345585726f4458536a (HEAD -> main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:27:24 2023 -0500
+
+    Modificando archivo
+
+diff --git a/actividades/articulo.html b/actividades/articulo.html
+index c10824f..19d686e 100644
+--- a/actividades/articulo.html
++++ b/actividades/articulo.html
+@@ -4,7 +4,16 @@
+         <link rel="stylesheet" href="css/estilos.css"/>
+     </head>
+     <body>
+-        <h1>Aqui vamos hacer un blog post</h1>
+-        <p>en este parrafo inicio</p>
++        <div id="container">
++            <div id="post">
++                <h1>Este es el titulo atractivo
++                     e interesante del post</h1>
++                <p>Y este es el parrafo de inicio
++                     donde vamos a explicar
++                      las cosas increibles que
++                      se pueden hacer con ramas</p>
++            </div>
++        </div>
++
+     </body>
+ </html>
+\ No newline at end of file
+diff --git a/actividades/css/estilos.css b/actividades/css/estilos.css
+index 733b5a6..03ec708 100644
+--- a/actividades/css/estilos.css
++++ b/actividades/css/estilos.css
+@@ -1,7 +1,26 @@
+ body
+ {
+-    color: blueviolet;
+-    text-align: center;
++    color: #333;
++    text-align: left;
+     font-family: "Arial";
++    font-size: 16px;
++    margin: 0;
++    padding: 0;
++
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git branch cabecera
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git show
+commit bf4c66154095eb889fd0db345585726f4458536a (HEAD -> main, cabecera)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:27:24 2023 -0500
+
+    Modificando archivo
+
+diff --git a/actividades/articulo.html b/actividades/articulo.html
+index c10824f..19d686e 100644
+--- a/actividades/articulo.html
++++ b/actividades/articulo.html
+@@ -4,7 +4,16 @@
+         <link rel="stylesheet" href="css/estilos.css"/>
+     </head>
+     <body>
+-        <h1>Aqui vamos hacer un blog post</h1>
+-        <p>en este parrafo inicio</p>
++        <div id="container">
++            <div id="post">
++                <h1>Este es el titulo atractivo
++                     e interesante del post</h1>
++                <p>Y este es el parrafo de inicio
++                     donde vamos a explicar
++                      las cosas increibles que
++                      se pueden hacer con ramas</p>
++            </div>
++        </div>
++
+     </body>
+ </html>
+\ No newline at end of file
+diff --git a/actividades/css/estilos.css b/actividades/css/estilos.css
+index 733b5a6..03ec708 100644
+--- a/actividades/css/estilos.css
++++ b/actividades/css/estilos.css
+@@ -1,7 +1,26 @@
+ body
+ {
+-    color: blueviolet;
+-    text-align: center;
++    color: #333;
++    text-align: left;
+     font-family: "Arial";
++    font-size: 16px;
++    margin: 0;
++    padding: 0;
++
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git checkout cabecera
+Switched to branch 'cabecera'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git checkout cabecera
+Switched to branch 'cabecera'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git status
+On branch cabecera
+nothing to commit, working tree clean
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git status
+On branch cabecera
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   articulo.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git add articulo.htm
+fatal: pathspec 'articulo.htm' did not match any files
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git add articulo.html
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git commit
+[cabecera de91a35] ines starting
+ 1 file changed, 3 insertions(+)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git commit
+On branch cabecera
+nothing to commit, working tree clean
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git status
+On branch cabecera
+nothing to commit, working tree clean
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git show
+commit de91a352445fbee1d8ec58fbf4cedd00b98a8663 (HEAD -> cabecera)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:44:44 2023 -0500
+
+    ines starting
+
+diff --git a/actividades/articulo.html b/actividades/articulo.html
+index 19d686e..383f788 100644
+--- a/actividades/articulo.html
++++ b/actividades/articulo.html
+@@ -5,6 +5,9 @@
+     </head>
+     <body>
+         <div id="container">
++            <div id="cabecera">
++                Cabecera
++            </div>
+             <div id="post">
+                 <h1>Este es el titulo atractivo
+                      e interesante del post</h1>
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git log
+commit de91a352445fbee1d8ec58fbf4cedd00b98a8663 (HEAD -> cabecera)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:44:44 2023 -0500
+
+    ines starting
+
+commit bf4c66154095eb889fd0db345585726f4458536a (main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:27:24 2023 -0500
+
+    Modificando archivo
+
+commit e0eef5247af5c62893e7b4bcbf99da8c80d27d36 (origin/main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 18:30:06 2023 -0500
+
+    Actividad
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git checkout cabecera
+Switched to branch 'cabecera'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git log
+commit bf4c66154095eb889fd0db345585726f4458536a (HEAD -> main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:27:24 2023 -0500
+
+    Modificando archivo
+
+commit e0eef5247af5c62893e7b4bcbf99da8c80d27d36 (origin/main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 18:30:06 2023 -0500
+
+    Actividad
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git checkout cabecera
+Switched to branch 'cabecera'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git log
+commit de91a352445fbee1d8ec58fbf4cedd00b98a8663 (HEAD -> cabecera)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:44:44 2023 -0500
+
+    ines starting
+
+commit bf4c66154095eb889fd0db345585726f4458536a (main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:27:24 2023 -0500
+
+    Modificando archivo
+
+commit e0eef5247af5c62893e7b4bcbf99da8c80d27d36 (origin/main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 18:30:06 2023 -0500
+
+    Actividad
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git checkout -b html
+Switched to a new branch 'html'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (html)
+$ git status
+On branch html
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   articulo.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (html)
+$ git add .
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (html)
+$ git commit
+[html d805789] Modificando html
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (html)
+$ git log
+commit d8057899cff8eef1fba598f280c587926e3c2f43 (HEAD -> html)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:07:07 2023 -0500
+
+    Modificando html
+
+commit de91a352445fbee1d8ec58fbf4cedd00b98a8663 (cabecera)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:44:44 2023 -0500
+
+    ines starting
+
+commit bf4c66154095eb889fd0db345585726f4458536a (main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:27:24 2023 -0500
+
+    Modificando archivo
+
+commit e0eef5247af5c62893e7b4bcbf99da8c80d27d36 (origin/main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 18:30:06 2023 -0500
+
+    Actividad
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (html)
+$ git checkout cabecera
+Switched to branch 'cabecera'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git checkout cabecera
+Switched to branch 'cabecera'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git commit -an
+Aborting commit due to empty commit message.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git commit -am
+error: switch `m' requires a value
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git commit -am "Finalizada la cabecera con diseño azul"
+[cabecera fc9b968] Finalizada la cabecera con diseño azul
+ 2 files changed, 22 insertions(+), 1 deletion(-)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git status
+On branch cabecera
+nothing to commit, working tree clean
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git checkout cabecera
+Switched to branch 'cabecera'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git commit -am "Agregado el parrafo"
+[main 48a228d] Agregado el parrafo
+ 1 file changed, 5 insertions(+)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git checkout cabecera
+Switched to branch 'cabecera'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git checkout cabecera
+Switched to branch 'cabecera'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git status
+On branch cabecera
+nothing to commit, working tree clean
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git log
+commit fc9b9689eb0155079ee2b2b8b191bdfd8aee5913 (HEAD -> cabecera)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:27:03 2023 -0500
+
+    Finalizada la cabecera con diseño azul
+
+commit de91a352445fbee1d8ec58fbf4cedd00b98a8663
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:44:44 2023 -0500
+
+    ines starting
+
+commit bf4c66154095eb889fd0db345585726f4458536a
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:27:24 2023 -0500
+
+    Modificando archivo
+
+commit e0eef5247af5c62893e7b4bcbf99da8c80d27d36 (origin/main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 18:30:06 2023 -0500
+
+    Actividad
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git log
+commit 48a228d2883cdfadf5ce3495c562a0aae602ae76 (HEAD -> main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:31:02 2023 -0500
+
+    Agregado el parrafo
+
+commit bf4c66154095eb889fd0db345585726f4458536a
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:27:24 2023 -0500
+
+    Modificando archivo
+
+commit e0eef5247af5c62893e7b4bcbf99da8c80d27d36 (origin/main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 18:30:06 2023 -0500
+
+    Actividad
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git merge cabecera
+Auto-merging actividades/articulo.html
+Merge made by the 'recursive' strategy.
+ actividades/articulo.html   |  6 ++++++
+ actividades/css/estilos.css | 18 ++++++++++++++++++
+ 2 files changed, 24 insertions(+)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git log
+commit 733da9d53028c6f7ffef1994b9352a47a3c6a9f3 (HEAD -> main)
+Merge: 48a228d fc9b968
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:35:00 2023 -0500
+
+    Merge branch 'cabecera'
+
+commit 48a228d2883cdfadf5ce3495c562a0aae602ae76
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:31:02 2023 -0500
+
+    Agregado el parrafo
+
+commit fc9b9689eb0155079ee2b2b8b191bdfd8aee5913 (cabecera)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:27:03 2023 -0500
+
+    Finalizada la cabecera con diseño azul
+
+commit de91a352445fbee1d8ec58fbf4cedd00b98a8663
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:44:44 2023 -0500
+
+    ines starting
+
+commit bf4c66154095eb889fd0db345585726f4458536a
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:27:24 2023 -0500
+
+    Modificando archivo
+
+commit e0eef5247af5c62893e7b4bcbf99da8c80d27d36 (origin/main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 18:30:06 2023 -0500
+
+    Actividad
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   css/estilos.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git add .
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   css/estilos.css
+
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git log
+commit 733da9d53028c6f7ffef1994b9352a47a3c6a9f3 (HEAD -> main)
+Merge: 48a228d fc9b968
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:35:00 2023 -0500
+
+    Merge branch 'cabecera'
+
+commit 48a228d2883cdfadf5ce3495c562a0aae602ae76
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:31:02 2023 -0500
+
+    Agregado el parrafo
+
+commit fc9b9689eb0155079ee2b2b8b191bdfd8aee5913 (cabecera)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:27:03 2023 -0500
+
+    Finalizada la cabecera con diseño azul
+
+commit de91a352445fbee1d8ec58fbf4cedd00b98a8663
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:44:44 2023 -0500
+
+    ines starting
+
+commit bf4c66154095eb889fd0db345585726f4458536a
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:27:24 2023 -0500
+
+    Modificando archivo
+
+commit e0eef5247af5c62893e7b4bcbf99da8c80d27d36 (origin/main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 18:30:06 2023 -0500
+
+    Actividad
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git show
+commit 733da9d53028c6f7ffef1994b9352a47a3c6a9f3 (HEAD -> main)
+Merge: 48a228d fc9b968
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:35:00 2023 -0500
+
+    Merge branch 'cabecera'
+
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   css/estilos.css
+
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git checkout cabecera
+Switched to branch 'cabecera'
+M       actividades/css/estilos.css
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git checkout main
+Switched to branch 'main'
+M       actividades/css/estilos.css
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git merge main
+Already up to date.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git checkout cabecera
+Switched to branch 'cabecera'
+M       actividades/css/estilos.css
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git marge main
+git: 'marge' is not a git command. See 'git --help'.
+
+The most similar command is
+        merge
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git merge main
+Updating fc9b968..733da9d
+Fast-forward
+ actividades/articulo.html | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git checkout main
+Switched to branch 'main'
+M       actividades/css/estilos.css
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git checkout cabecera
+Switched to branch 'cabecera'
+M       actividades/css/estilos.css
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git status
+On branch cabecera
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   css/estilos.css
+
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git commit -am "modifique la cabecera"
+[cabecera a96c99d] modifique la cabecera
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   articulo.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git commit -am "Agrego suscripcion"
+[main f2b3f5d] Agrego suscripcion
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git checkout cabecera
+Switched to branch 'cabecera'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git checkout cabecera
+Switched to branch 'cabecera'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git merge cabecera
+Auto-merging actividades/articulo.html
+CONFLICT (content): Merge conflict in actividades/articulo.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main|MERGING)
+$ git log
+commit f2b3f5d3289cd7d6d6e7095f6a9494c4d97790f7 (HEAD -> main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:56:03 2023 -0500
+
+    Agrego suscripcion
+
+commit 733da9d53028c6f7ffef1994b9352a47a3c6a9f3
+Merge: 48a228d fc9b968
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:35:00 2023 -0500
+
+    Merge branch 'cabecera'
+
+commit 48a228d2883cdfadf5ce3495c562a0aae602ae76
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:31:02 2023 -0500
+
+    Agregado el parrafo
+
+commit fc9b9689eb0155079ee2b2b8b191bdfd8aee5913
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:27:03 2023 -0500
+
+    Finalizada la cabecera con diseño azul
+
+commit de91a352445fbee1d8ec58fbf4cedd00b98a8663
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:44:44 2023 -0500
+
+    ines starting
+
+commit bf4c66154095eb889fd0db345585726f4458536a
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:27:24 2023 -0500
+
+    Modificando archivo
+
+commit e0eef5247af5c62893e7b4bcbf99da8c80d27d36 (origin/main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Wed Feb 1 18:30:06 2023 -0500
+
+    Actividad
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main|MERGING)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        modified:   css/estilos.css
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   articulo.html
+
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main|MERGING)
+$ git commit -am "Solucion de conflicto"
+[main 5848c33] Solucion de conflicto
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 8 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git checkout cabecera
+Switched to branch 'cabecera'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (cabecera)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 8 commits.
+  (use "git push" to publish your local commits)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git remote add origin https://github.com/sara-34/hyperblog.git
+error: remote origin already exists.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git remote
+origin
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ ls -al
+total 33
+drwxr-xr-x 1 Sara 197121     0 Feb  2 16:02  ./
+drwxr-xr-x 1 Sara 197121     0 Feb  1 18:29  ../
+-rw-r--r-- 1 Sara 197121    81 Feb  1 18:20 'Hola mundo.txt'
+-rw-r--r-- 1 Sara 197121  1009 Feb  2 16:02  articulo.html
+-rw-r--r-- 1 Sara 197121 17177 Feb  1 18:19  codigo-github.txt
+drwxr-xr-x 1 Sara 197121     0 Feb  2 15:58  css/
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git push origin main
+Enumerating objects: 43, done.
+Counting objects: 100% (43/43), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (27/27), done.
+Writing objects: 100% (38/38), 3.34 KiB | 285.00 KiB/s, done.
+Total 38 (delta 19), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (19/19), completed with 1 local object.
+To https://github.com/sara-34/curso-profesional-git-git-hub-platzi.git
+   e0eef52..5848c33  main -> main
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git pull origin main
+From https://github.com/sara-34/curso-profesional-git-git-hub-platzi
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$  git starus
+git: 'starus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git log
+commit 5848c333de65a906f93d6e56b1bfd4aa82ac73b2 (HEAD -> main, origin/main)
+Merge: f2b3f5d a96c99d
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 16:01:41 2023 -0500
+
+    Solucion de conflicto
+
+commit f2b3f5d3289cd7d6d6e7095f6a9494c4d97790f7
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:56:03 2023 -0500
+
+    Agrego suscripcion
+
+commit a96c99d93a4886862ea07fb3d2acceeede6fd3db (cabecera)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:54:35 2023 -0500
+
+    modifique la cabecera
+
+commit 733da9d53028c6f7ffef1994b9352a47a3c6a9f3
+Merge: 48a228d fc9b968
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:35:00 2023 -0500
+
+    Merge branch 'cabecera'
+
+commit 48a228d2883cdfadf5ce3495c562a0aae602ae76
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:31:02 2023 -0500
+
+    Agregado el parrafo
+
+commit fc9b9689eb0155079ee2b2b8b191bdfd8aee5913
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:27:03 2023 -0500
+
+    Finalizada la cabecera con diseño azul
+
+commit de91a352445fbee1d8ec58fbf4cedd00b98a8663
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 14:44:44 2023 -0500
+
+    ines starting
+
+commit bf4c66154095eb889fd0db345585726f4458536a
+Author: sara-34 <saritaariaslondono12@gmail.com>
+:
+

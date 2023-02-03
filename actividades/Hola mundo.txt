@@ -4,5 +4,9 @@ Febrero 1 2023
 
 miercoles 4:44 pm
 master 1
+<<<<<<< HEAD
+=======
+msster 2
+>>>>>>> 7e139f12075d8240adfb2563670e7c639b2f4189
 
 mañana vamos a estudiar

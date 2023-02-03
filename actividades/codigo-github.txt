@@ -2498,6 +2498,486 @@ To github.com:sara-34/curso-profesional-git-git-hub-platzi.git
 Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (header)
 $
 
+Sara@LAPTOP-8G48F3OK MINGW64 ~ (main)
+$ pwd
+/c/Users/Sara
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~ (main)
+$ ls
+'3D Objects'/
+ Actividad-participantes-AyB/
+ ActividadClase3/
+ AppData/
+ Arias_Londonio_Sara/
+ Aspire-CANA/
+ CIAF/
+ COPYING.txt
+ Carro/
+'Cisco Packet Tracer 8.1.1'/
+'Configuración local'@
+ Cookies@
+'Datos de programa'@
+ Desktop/
+ Downloads/
+'Entorno de red'@
+ ExamenFinal-SaraAriasLondonio.zip
+ Favorites/
+ GNS3/
+ GNS3.url
+ IdeaProjects/
+ Impresoras@
+ IntelGraphicsProfiles/
+ Links/
+'Menú Inicio'@
+'Mis documentos'@
+ Music/
+'My project'/
+'My project (1)'/
+ NTUSER.DAT
+ NTUSER.DAT{d221d0d6-978c-11ed-94bf-fe2c2ca85b16}.TM.blf
+ NTUSER.DAT{d221d0d6-978c-11ed-94bf-fe2c2ca85b16}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{d221d0d6-978c-11ed-94bf-fe2c2ca85b16}.TMContainer00000000000000000002.regtrans-ms
+ Odontologos/
+ OneDrive/
+'OneDrive - ciaf.edu.co'/
+ POO/
+ Paises/
+ Pictures/
+ Plantillas@
+ Practica/
+ Reciente@
+'Saved Games'/
+ SendTo@
+ Solar-PuTTY.exe*
+ Uninstall.exe*
+ VCRUNTIME140.dll*
+ VPSManager.cs
+ Videos/
+'VirtualBox VMs'/
+ appliances/
+ blanco.txt
+ cacert.pem
+ cafe.txt
+ cat.exe*
+ configs/
+ cpulimit/
+ cyggcc_s-1.dll*
+ cygiconv-2.dll*
+ cygintl-8.dll*
+ cygwin1.dll*
+ cygz.dll*
+ devcon.exe*
+ dynamips/
+ dynamips-start.cmd
+ eclipse/
+ eclipse-workspace/
+ gawk.exe*
+ gns3.exe*
+ gns3.ico
+ gns3server.exe*
+ gns3vmnet.exe*
+'imagen sara'/
+ java-things/
+ lib/
+ loopback-manager.cmd
+ mercadoAbierto/
+ network-device-list.cmd
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ practicas/
+ proyecto1/
+'prueba 2021'/
+ putty.exe*
+ putty_settings.reg
+ putty_standalone.exe*
+ python3.dll*
+ python37.dll*
+ qemu-0.11.0/
+ qemu-3.1.0/
+ schemas/
+ source/
+ static/
+ strings.exe*
+ symbols/
+ tail.exe*
+ templates/
+ ttstart.macro
+ tvnviewer.exe*
+ ubridge-0.9.12/
+ ubridge.exe*
+ violeta.txt
+ vmnet-manager.cmd
+ vpcs/
+ vpcs-start.cmd
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~ (main)
+$ cd proyecto1
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ ls
+actividades/
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git checkout header
+Switched to branch 'header'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (header)
+$ arbolito
+bash: arbolito: command not found
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (header)
+$ git log --all --graph --decorate --oneline
+* a116dc3 (origin/main, main) Subiendo codigo
+| * 4ec5a02 (HEAD -> header) Subiendo codigo
+| * 4102926 (origin/header) icono header
+|/
+* 35f446e (origin/footer, origin/cabecera, footer, cabecera) Actualizacion 2.0
+*   5848c33 Solucion de conflicto
+|\
+| * a96c99d modifique la cabecera
+* | f2b3f5d Agrego suscripcion
+|/
+*   733da9d Merge branch 'cabecera'
+|\
+| * fc9b968 Finalizada la cabecera con diseño azul
+* | 48a228d Agregado el parrafo
+| | * d805789 (html) Modificando html
+| |/
+| * de91a35 ines starting
+|/
+* bf4c661 Modificando archivo
+* e0eef52 (tag: v0.1) Actividad
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (header)
+$ git status
+On branch header
+nothing to commit, working tree clean
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (header)
+$ git status
+On branch header
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   actividades/articulo.html
+        modified:   actividades/css/estilos.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (header)
+$ git commit -am "Color, logo nuevo y mejor color header"
+[header 7c208aa] Color, logo nuevo y mejor color header
+ 2 files changed, 20 insertions(+), 6 deletions(-)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (header)
+$ git status
+On branch header
+nothing to commit, working tree clean
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (header)
+$ git pull origin header
+From github.com:sara-34/curso-profesional-git-git-hub-platzi
+ * branch            header     -> FETCH_HEAD
+Already up to date.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (header)
+$ git checkout footer
+Switched to branch 'footer'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (footer)
+$ git pull origin footer
+From github.com:sara-34/curso-profesional-git-git-hub-platzi
+ * branch            footer     -> FETCH_HEAD
+Already up to date.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (footer)
+$ git branch
+  cabecera
+* footer
+  header
+  html
+  main
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (footer)
+$ git commit -am "Agregando pies de pagina"
+[footer f972a14] Agregando pies de pagina
+ 2 files changed, 15 insertions(+), 1 deletion(-)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (footer)
+$ git status
+On branch footer
+nothing to commit, working tree clean
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (footer)
+$ git pull origin footer
+From github.com:sara-34/curso-profesional-git-git-hub-platzi
+ * branch            footer     -> FETCH_HEAD
+Already up to date.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (footer)
+$ git push origin footer
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 562 bytes | 140.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To github.com:sara-34/curso-profesional-git-git-hub-platzi.git
+   35f446e..f972a14  footer -> footer
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git checkout header
+Switched to branch 'header'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (header)
+$ git checkout footer
+Switched to branch 'footer'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (footer)
+$ git pull origin footer
+From github.com:sara-34/curso-profesional-git-git-hub-platzi
+ * branch            footer     -> FETCH_HEAD
+Already up to date.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git merge header
+Merge made by the 'recursive' strategy.
+ actividades/Imagenes/dragon.png | Bin 0 -> 35146 bytes
+ actividades/articulo.html       |   3 ++-
+ actividades/css/estilos.css     |  23 ++++++++++++++++++-----
+ 3 files changed, 20 insertions(+), 6 deletions(-)
+ create mode 100644 actividades/Imagenes/dragon.png
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git pull origin main
+From github.com:sara-34/curso-profesional-git-git-hub-platzi
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git push origin main
+Enumerating objects: 20, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (10/10), 1.19 KiB | 304.00 KiB/s, done.
+Total 10 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To github.com:sara-34/curso-profesional-git-git-hub-platzi.git
+   a116dc3..04a44e3  main -> main
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git merge footer
+Auto-merging actividades/css/estilos.css
+CONFLICT (content): Merge conflict in actividades/css/estilos.css
+Auto-merging actividades/articulo.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main|MERGING)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        modified:   actividades/articulo.html
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   actividades/css/estilos.css
+
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main|MERGING)
+$ git add .
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main|MERGING)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   actividades/articulo.html
+        modified:   actividades/css/estilos.css
+
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main|MERGING)
+$ git commit -am "Subiendo todos los cambios"
+[main 4ebe961] Subiendo todos los cambios
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git pull origin main
+From github.com:sara-34/curso-profesional-git-git-hub-platzi
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git push origin main
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 615 bytes | 615.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To github.com:sara-34/curso-profesional-git-git-hub-platzi.git
+   04a44e3..4ebe961  main -> main
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git show
+commit 4ebe961ea527cd875cefc5cdd46f6188efa2ecf0 (HEAD -> main, origin/main)
+Merge: 04a44e3 f972a14
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Fri Feb 3 08:20:33 2023 -0500
+
+    Subiendo todos los cambios
+
+diff --cc actividades/articulo.html
+index 4b30dda,bbd079b..c91acf7
+--- a/actividades/articulo.html
++++ b/actividades/articulo.html
+@@@ -24,8 -23,11 +24,11 @@@
+                          informacion adicional
+                          que se necesita
+                        </p>
+ -                      <p>Suscribete</p>
+ +                      <p>Suscribete a mi nuevo canal</p>
+              </div>
++             <div id="footer">
++                 Trabajo de pie de pagina Platzi
++             </div>
+          </div>
+
+      </body>
+diff --cc actividades/css/estilos.css
+index 9d8dec0,8f60c41..ff84584
+--- a/actividades/css/estilos.css
++++ b/actividades/css/estilos.css
+@@@ -1,7 -1,6 +1,8 @@@
+  body
+  {
+ +
+ +    color: #333;
++     color: black;
+      text-align: left;
+      font-family: "Courier";
+      font-size: 16px;
+@@@ -11,18 -10,24 +12,30 @@@
+  }
+  #cabecera
+  {
+ +    background:#33A;
++     background: pink;
++     color: white;
++     margin: 0;
++     padding: 0.5em;
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git log
+commit 4ebe961ea527cd875cefc5cdd46f6188efa2ecf0 (HEAD -> main, origin/main)
+Merge: 04a44e3 f972a14
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Fri Feb 3 08:20:33 2023 -0500
+
+    Subiendo todos los cambios
+
+commit 04a44e32280c4ef458b1f17d912e7f802a2aa098
+Merge: a116dc3 7c208aa
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Fri Feb 3 08:13:35 2023 -0500
+
+    Merge branch 'header'
+
+commit f972a14ba8f3e3807450678fa4dd03a071923b20 (origin/footer, footer)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Fri Feb 3 08:06:43 2023 -0500
+
+    Agregando pies de pagina
+
+commit 7c208aac1857737003a5bd04e817758a91855632 (header)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Fri Feb 3 07:58:53 2023 -0500
+
+    Color, logo nuevo y mejor color header
+
+commit a116dc3ae1a7d92a853b79b667c5902c5ceb04bf
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 20:51:18 2023 -0500
+
+    Subiendo codigo
+
+commit 4ec5a02795d2171e831c2882372850810ebb9a64
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 20:49:17 2023 -0500
+
+    Subiendo codigo
+
+commit 41029269a7999d10c3cc65bc591a5f19274f2d4a (origin/header)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 20:42:56 2023 -0500
+
+    icono header
+
+commit 35f446e203392fcc99b4ad2c8f6cfe1c7406b587 (origin/cabecera, cabecera)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git checkout header
+Switched to branch 'header'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (header)
+$ git checkout footer
+Switched to branch 'footer'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (footer)
+$ git pull origin main
+From github.com:sara-34/curso-profesional-git-git-hub-platzi
+ * branch            main       -> FETCH_HEAD
+Updating f972a14..4ebe961
+Fast-forward
+ actividades/Imagenes/dragon.png |  Bin 0 -> 35146 bytes
+ actividades/articulo.html       |    3 +-
+ actividades/codigo-github.txt   | 1015 +++++++++++++++++++++++++++++++++++++++
+ actividades/css/estilos.css     |   21 +-
+ 4 files changed, 1035 insertions(+), 4 deletions(-)
+ create mode 100644 actividades/Imagenes/dragon.png
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$
+
+
 
 
 

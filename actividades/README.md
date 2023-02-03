@@ -4,3 +4,5 @@
 
 * Creado por platzi
 
+* incluye ejemplos en windows
+* disponible todas las edades

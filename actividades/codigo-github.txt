@@ -1487,3 +1487,1018 @@ commit bf4c66154095eb889fd0db345585726f4458536a
 Author: sara-34 <saritaariaslondono12@gmail.com>
 :
 
+Sara@LAPTOP-8G48F3OK MINGW64 ~ (main)
+$ cd
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~ (main)
+$ cd ..
+
+Sara@LAPTOP-8G48F3OK MINGW64 /c/Users
+$ cd
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~ (main)
+$ git config -l
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=main
+user.email=saritaariaslondono12@gmail.com
+user.name=sara-34
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/paula1278/Actividad-participantes-AyB.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+lfs.repositoryformatversion=0
+lfs.https://github.com/paula1278/Actividad-participantes-AyB.git/info/lfs.access=basic
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~ (main)
+$ ssh-keygen -t rsa -b 4096 -C "saritaariaslondono12@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Sara/.ssh/id_rsa):
+Created directory '/c/Users/Sara/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Sara/.ssh/id_rsa
+Your public key has been saved in /c/Users/Sara/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:PzyKdxUcp4YyLkPeP6UhKwWcmyrYS9kznWk/ikoE8VM saritaariaslondono12@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|.   E            |
+| o .        . .  |
+|. o  . .   o +   |
+| . .  = o . =    |
+|  .  o *So . .   |
+| . o .*o=o. o    |
+| o+ +.=+ +==     |
+|.oo .=.o+.=o     |
+|  o+. o+oo .     |
++----[SHA256]-----+
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~ (main)
+$ eval $(ssh-agent -s)
+Agent pid 1512
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~ (main)
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/Sara/.ssh/id_rsa (saritaariaslondono12@gmail.com)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~ (main)
+$ cd proyecto1/
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ ls
+actividades/
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ cd actividades/
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ ls
+'Hola mundo.txt'   articulo.html   codigo-github.txt   css/
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ cd ..
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+$ cd actividades/
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git remote -v
+origin  https://github.com/sara-34/curso-profesional-git-git-hub-platzi.git (fetch)
+origin  https://github.com/sara-34/curso-profesional-git-git-hub-platzi.git (push)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git remote set-url origin git@github.com:sara-34/curso-profesional-git-git-hub-platzi.git
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git remote -v
+origin  git@github.com:sara-34/curso-profesional-git-git-hub-platzi.git (fetch)
+origin  git@github.com:sara-34/curso-profesional-git-git-hub-platzi.git (push)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git pull
+The authenticity of host 'github.com (140.82.112.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Already up to date.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git pull origin main
+From github.com:sara-34/curso-profesional-git-git-hub-platzi
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   articulo.html
+        modified:   codigo-github.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git diff
+diff --git a/actividades/articulo.html b/actividades/articulo.html
+index 6ef9d7a..53b7d43 100644
+--- a/actividades/articulo.html
++++ b/actividades/articulo.html
+@@ -8,7 +8,7 @@
+             <div id="cabecera">
+                 Hyperblog
+                 <span id="tagline">
+-                    Tu blog de cabecera
++                    Tu blog de cabecera 2.0
+                 </span>
+             </div>
+             <div id="post">
+diff --git a/actividades/codigo-github.txt b/actividades/codigo-github.txt
+index a28b49d..0c352bd 100644
+--- a/actividades/codigo-github.txt
++++ b/actividades/codigo-github.txt
+@@ -609,3 +609,881 @@ Updated 1 path from e96f684
+
+ Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1 (main)
+ $
++febrero 02/ 2023
++
++Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
++$ git status
++On branch main
++Your branch is ahead of 'origin/main' by 1 commit.
++  (use "git push" to publish your local commits)
++
++nothing to commit, working tree clean
++
++Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
++$ git show
++commit bf4c66154095eb889fd0db345585726f4458536a (HEAD -> main)
++Author: sara-34 <saritaariaslondono12@gmail.com>
++Date:   Thu Feb 2 14:27:24 2023 -0500
++
++    Modificando archivo
++
++diff --git a/actividades/articulo.html b/actividades/articulo.html
++index c10824f..19d686e 100644
++--- a/actividades/articulo.html
+++++ b/actividades/articulo.html
++@@ -4,7 +4,16 @@
++         <link rel="stylesheet" href="css/estilos.css"/>
++     </head>
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git commit -am "Actualizacion 2.0"
+[main 35f446e] Actualizacion 2.0
+ 2 files changed, 879 insertions(+), 1 deletion(-)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git pull origin main
+From github.com:sara-34/curso-profesional-git-git-hub-platzi
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 5.78 KiB | 2.89 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:sara-34/curso-profesional-git-git-hub-platzi.git
+   5848c33..35f446e  main -> main
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git log
+commit 35f446e203392fcc99b4ad2c8f6cfe1c7406b587 (HEAD -> main, origin/main)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 18:24:39 2023 -0500
+
+    Actualizacion 2.0
+
+commit 5848c333de65a906f93d6e56b1bfd4aa82ac73b2
+Merge: f2b3f5d a96c99d
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 16:01:41 2023 -0500
+
+    Solucion de conflicto
+
+commit f2b3f5d3289cd7d6d6e7095f6a9494c4d97790f7
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:56:03 2023 -0500
+
+    Agrego suscripcion
+
+commit a96c99d93a4886862ea07fb3d2acceeede6fd3db (cabecera)
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:54:35 2023 -0500
+
+    modifique la cabecera
+
+commit 733da9d53028c6f7ffef1994b9352a47a3c6a9f3
+Merge: 48a228d fc9b968
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:35:00 2023 -0500
+
+    Merge branch 'cabecera'
+
+commit 48a228d2883cdfadf5ce3495c562a0aae602ae76
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:31:02 2023 -0500
+
+    Agregado el parrafo
+
+commit fc9b9689eb0155079ee2b2b8b191bdfd8aee5913
+Author: sara-34 <saritaariaslondono12@gmail.com>
+Date:   Thu Feb 2 15:27:03 2023 -0500
+
+    Finalizada la cabecera con diseño azul
+
+commit de91a352445fbee1d8ec58fbf4cedd00b98a8663
+Author: sara-34 <saritaariaslondono12@gmail.com>
+
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git log --all --graph
+* commit 35f446e203392fcc99b4ad2c8f6cfe1c7406b587 (HEAD -> main, origin/main)
+| Author: sara-34 <saritaariaslondono12@gmail.com>
+| Date:   Thu Feb 2 18:24:39 2023 -0500
+|
+|     Actualizacion 2.0
+|
+*   commit 5848c333de65a906f93d6e56b1bfd4aa82ac73b2
+|\  Merge: f2b3f5d a96c99d
+| | Author: sara-34 <saritaariaslondono12@gmail.com>
+| | Date:   Thu Feb 2 16:01:41 2023 -0500
+| |
+| |     Solucion de conflicto
+| |
+| * commit a96c99d93a4886862ea07fb3d2acceeede6fd3db (cabecera)
+| | Author: sara-34 <saritaariaslondono12@gmail.com>
+| | Date:   Thu Feb 2 15:54:35 2023 -0500
+| |
+| |     modifique la cabecera
+| |
+* | commit f2b3f5d3289cd7d6d6e7095f6a9494c4d97790f7
+|/  Author: sara-34 <saritaariaslondono12@gmail.com>
+|   Date:   Thu Feb 2 15:56:03 2023 -0500
+|
+|       Agrego suscripcion
+|
+*   commit 733da9d53028c6f7ffef1994b9352a47a3c6a9f3
+|\  Merge: 48a228d fc9b968
+| | Author: sara-34 <saritaariaslondono12@gmail.com>
+| | Date:   Thu Feb 2 15:35:00 2023 -0500
+| |
+| |     Merge branch 'cabecera'
+| |
+| * commit fc9b9689eb0155079ee2b2b8b191bdfd8aee5913
+| | Author: sara-34 <saritaariaslondono12@gmail.com>
+| | Date:   Thu Feb 2 15:27:03 2023 -0500
+| |
+| |     Finalizada la cabecera con diseño azul
+| |
+* | commit 48a228d2883cdfadf5ce3495c562a0aae602ae76
+| | Author: sara-34 <saritaariaslondono12@gmail.com>
+| | Date:   Thu Feb 2 15:31:02 2023 -0500
+| |
+| |     Agregado el parrafo
+| |
+| | * commit d8057899cff8eef1fba598f280c587926e3c2f43 (html)
+| |/  Author: sara-34 <saritaariaslondono12@gmail.com>
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git log --all --graph --decorate --oneline
+* 35f446e (HEAD -> main, origin/main) Actualizacion 2.0
+*   5848c33 Solucion de conflicto
+|\
+| * a96c99d (cabecera) modifique la cabecera
+* | f2b3f5d Agrego suscripcion
+|/
+*   733da9d Merge branch 'cabecera'
+|\
+| * fc9b968 Finalizada la cabecera con diseño azul
+* | 48a228d Agregado el parrafo
+| | * d805789 (html) Modificando html
+| |/
+| * de91a35 ines starting
+|/
+* bf4c661 Modificando archivo
+* e0eef52 Actividad
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ alias arbolito="git log --all --graph --decorate --oneline"
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ arbolito
+* 35f446e (HEAD -> main, origin/main) Actualizacion 2.0
+*   5848c33 Solucion de conflicto
+|\
+| * a96c99d (cabecera) modifique la cabecera
+* | f2b3f5d Agrego suscripcion
+|/
+*   733da9d Merge branch 'cabecera'
+|\
+| * fc9b968 Finalizada la cabecera con diseño azul
+* | 48a228d Agregado el parrafo
+| | * d805789 (html) Modificando html
+| |/
+| * de91a35 ines starting
+|/
+* bf4c661 Modificando archivo
+* e0eef52 Actividad
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git tag -a v0.1 -m "resultado" e0eef52
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git tag
+v0.1
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git show-ref --tag
+5a26d61af51340ba299c640a84fd69c8389740c2 refs/tags/v0.1
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ history
+   22  git clone https://github.com/jpereyradh/Mochila_C40522.git
+   23  git branch paula_salazar
+   24  git checkout paula-salazar
+   25  git checkout "paula-salazar"
+   26  git branch paulaSalazar
+   27  git status
+   28  cleat
+   29  clear
+   30  git config user.name "paula1278"
+   31  git config user.email "paulandrsalazar
+   32  clear
+   33  cd
+   34  git config user.name "paula1278"
+   35  git config user.email "paulandrsalazar@gmail.com"
+   36  ls -a
+   37  git status .
+   38  git add .
+   39  git commit -m"Actividad7 mochila"
+   40  git log
+   41  git branch -M main
+   42  git add remote origin https://github.com/jpereyradh/Mochila_C40522.git
+   43  git remote add origin https://github.com/jpereyradh/Mochila_C40522.git
+   44  git push -u origin paulaSalazar
+   45  git switch main
+   46  git checkout paulaSalazar
+   47  git push origin main
+   48  git remote add origin https://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@github.com/jpereyradh/Mochila_C40522.git
+   49  clear
+   50  git status
+   51  git push origin main
+   52  clear
+   53  git status
+   54  git branch paula_salazar
+   55  git checkout paula_salazar
+   56  git status
+   57  git add .
+   58  git status
+   59  git commit -m"Subiendo actividad 7"
+   60  git push origin paula_salazar
+   61  git checkound Salazar_Paula
+   62  git checkout Salazar_Paula
+   63  git status
+   64  git commit -m"Actividad7"
+   65  git branch -u main
+   66  git checkound main
+   67  git checkout main
+   68  git push origin Salazar_Paula
+   69  clear
+   70  git status
+   71  git add .
+   72  git commit -m"Subiendo actividades"
+   73  git branch Salazar_Paula
+   74  git checkout Salazar_Paula
+   75  git push -u origin Salazar_Paula
+   76  git config user.name "paula1278"
+   77  git config user.email "paulandrsalazar@gmail.com"
+   78  git push -u origin Salazar_Paula
+   79  git config --global
+   80  git config --global -e
+   81  git push -u origin Salazar_Paula
+   82  git config user.name "paula1278"
+   83  git config user.email "paulandrsalazar@gmail.com"
+   84  git push -u origin Salazar_Paula
+   85  git push origin main
+   86  git init
+   87  git config user.name"sara-34"
+   88  git config user.mail"saritaariaslondono12@gmail.com
+   89  git config user.mail"saritaariaslondono12@gmail.com"
+   90  git init
+   91  git config user.name"sara-34"
+   92  git config user.mail"saritaariaslondono12@gmail.com"
+   93  git status
+   94  git add .
+   95  git commit -m"Actualizacion"
+   96  git push origin main
+   97  git clone https://github.com/sara-34/Globant.git
+   98  git remote add origin Cloning into 'Globant'...
+   99  remote: Repository not found.
+  100  fatal: repository 'https://github.com/sara-34/Globant.git/' not found
+  101  git remote add origin https://github.com/sara-34/Globant.git
+  102  git push origin main
+  103  git push origin main
+  104  git push origin main
+  105  motas123
+  106  git push origin main
+  107  git remote add origin https://github.com/sara-34/Globant.git
+  108  git add .
+  109  git push origin main
+  110  git push origin main
+  111  git init
+  112  git status
+  113  git push origin main
+  114  git remote add push https://github.com/sara-34/Globant.git/
+  115  git push origin main
+  116  git status
+  117  git push origin main
+  118  git init
+  119  git clone https://github.com/paula1278/Actividad-participantes-AyB.git
+  120  touch rojo.txt azul.txt amarillo.txt
+  121  git status
+  122  git add azul.txt amarillo.txt rojo.txt
+  123  git status
+  124  git commit -m"Subiendo archivos"
+  125  git push origin main
+  126  git pull origin main
+  127  git remote add origin https://github.com/paula1278/Actividad-participantes-AyB.git
+  128  git push origin main
+  129  git pull origin main
+  130  git log
+  131  git push -u origin main
+  132  git push origin main
+  133  git staus
+  134  git status
+  135  git clone https://github.com/paula1278/Actividad-participantes-AyB.git
+  136  git push origin main
+  137  git pull
+  138  git pull origin main
+  139  git commit -m"Subiendo actividades"
+  140  git status
+  141  clear
+  142  git init
+  143  git remote add https://github.com/paula1278/Actividad-participantes-AyB.git
+  144  clear
+  145  git remote add origin https://github.com/paula1278/Actividad-participantes-AyB.git
+  146  touch azul.txt rojo.txt amarillo.txt
+  147  git add azul.txt rojo.txt amarillo.txt
+  148  git commit -m"subiendo archivos"
+  149  git status
+  150  clear
+  151  git clone
+  152  git clone https://github.com/paula1278/Actividad-participantes-AyB.git
+  153  git pull origin main
+  154  git branch -M main
+  155  git push origin main
+  156  clear
+  157  git pull origin main
+  158  git push origin main
+  159  touch cafe.txt violeta.txt blanco.txt
+  160  git status
+  161  git add violeta.txt blanco.txt cafe.txt
+  162  git status
+  163  git commit -m"subiendo archivos"
+  164  git push origin main
+  165  git push origin main
+  166  ls
+  167  cd Actividad-participantes-AyB/
+  168  ls
+  169  git push origin main
+  170  git pull origin main
+  171  git status
+  172  git commit -m"subiendo archivos"
+  173  git push origin main
+  174  touch hola.txt saludo.txt adios.txt
+  175  git status
+  176  git add .
+  177  git status
+  178  git commit -m"subiendo archivos"
+  179  git push origin main
+  180  git pull origin main
+  181  ls .
+  182  cd hola.txt
+  183  type hola.txt
+  184  type rosado.txt
+  185  cd Desktop
+  186  ls .
+  187  ls .
+  188  cd ..
+  189  ls .
+  190  ls -a
+  191  ls -l
+  192  nano naranja.txt
+  193  git status
+  194  git add .
+  195  git status
+  196  git commit -m"modificando archivo naranja"
+  197  git push origin main
+  198  git pull origin main
+  199  git status
+  200  git push origin main
+  201  git status
+  202  git remote add origin https://github.com/nuevopensao/Engranaje_Studio.git
+  203  git remote add origin https://github.com/nuevopensao/Engranaje_Studio.git
+  204  git add.
+  205  git add .
+  206  git commit -m"GPS"
+  207  git push origin main
+  208  git init
+  209  git status
+  210  ls
+  211  ls
+  212  cd "digital-bimestre4"
+  213  ls
+  214  cd infraestructura1
+  215  ls
+  216  cd "Clase 3 Infra"
+  217  la
+  218  ls
+  219  touch /* -------------------------- Script Principal -------------------------- */
+  220  /*  R
+  221      1. solicitar el min
+  222      2. Solicitar el max
+  223      3. Mostra el nÃºmero
+  224  */
+  225  /*
+  226  let min = parseInt(  prompt('Ingrese el minimo')  );
+  227  let max = parseInt(  prompt('Ingrese el max')  );
+  228  let random =  Math.round( Math.random() * (max - min) + min) ;
+  229  console.log(random);
+  230   */
+  231  // Eligir una peli random
+  232  //                    0              1             2
+  233  /* let peliculas = ['Iron man', 'Capitan America', 'Hulk'];
+  234  let max = peliculas.length;
+  235  let min = 0;
+  236  let posRandom = generarRandom(min, max)
+  237  console.log(posRandom);
+  238  console.log( peliculas[posRandom] );
+  239  function generarRandom(min, max){
+  240      let numero = Math.floor( Math.random() * (max - min) + min);
+  241      return numero;
+  242  } */
+  243  /*
+  244      1. Pedir jugar
+  245      1.a Validar
+  246      2. Generar Jugada
+  247      3. Determinar Ganador
+  248      4. Mostrar el ganador
+  249  */
+  250  /* ----------------------------- Juego Principal ---------------------------- */
+  251  const EMPATE = 0;
+  252  const GANASTE = 1;
+  253  const PERDISTE = 2;
+  254  let ptosUsuario = 0;
+  255  let ptosMaquina = 0;
+  256  while( ptosMaquina <= 3 || ptosUsuario <= 3  ){
+  257      let opcionUsuario = pedirOpcion();
+  258      let opcionMaquina = jugarMaquina();
+  259      let resultado = juego(opcionUsuario, opcionMaquina);
+  260  }
+  261  /* ------------------------------- comentario ------------------------------- */
+  262  function pedirOpcion(){     let usuario;     // Validar que el numero este entre 1 y 3;     do {
+  263          usuario = parseInt( prompt( `Ingresar Jugada
+  264                                  1- Piedra
+  265  ls
+  266  cd "Clase 3 Infra"
+  267  touch vagrantfile
+  268  ls
+  269  cd vagrantfile
+  270  cd vagrantfile
+  271  git status
+  272  cls
+  273  clear
+  274  ls
+  275  add vagrantfile
+  276  ls
+  277  cat vagrantfile
+  278  vagrant up
+  279  vegrant box add debian/buster64
+  280  vagrant box add debian/buster64
+  281  vagrant --version
+  282  git init
+  283  git add
+  284  git add Mardown-Platzi
+  285  git add Markdown-Platzi
+  286  git init
+  287  git add Markdown-Platzi
+  288  git init
+  289  git init
+  290  git add MarkdownPlatzi
+  291  git init
+  292  git add README.md
+  293  git add .
+  294  git commit -m "MarkdownPlatzi"
+  295  git branch -M main
+  296  git remote add origin https://github.com/sara-34/frontend-path
+  297  git push -u origin main
+  298  cd Desktop/
+  299  cd Markdown-Platzi/
+  300  git origin
+  301  git status
+  302  git remote get-url origin
+  303  cd ..
+  304  git clone
+  305  git clone https://github.com/sara-34/frontend-path.git
+  306  git clone http://github.com/sara-34/frontend-path.git
+  307  git init
+  308  git status
+  309  git add .
+  310  git commit -m "markdown-platzi"
+  311  git branch -M main
+  312  git remote add origin https://github.com/sara-34/frontend- ruta.git
+  313  git push -u origin main
+  314  git remote add origin https://github.com/sara-34/frontend-path.git
+  315  git push -u origin main
+  316  clear
+  317  git status
+  318  git add .
+  319  git commit -m "Informacion"
+  320  git branch -M main
+  321  git push -u origin main
+  322  git init
+  323  git status
+  324  git add .
+  325  git commit -m"Subiendo Actividad Texto"
+  326  git branch -M main
+  327  git remote add origin https://github.com/sara-34/markdown-platzi.git
+  328  git push -u origin main
+  329  git status
+  330  git add .
+  331  git commit -m"Actividad"
+  332  git branch -M main
+  333  git remote add origin https://github.com/sara-34/markdown-platzi.git
+  334  git push -u origin main
+  335  git status
+  336  git add .
+  337  git branch -M main
+  338  git commit -m"Actividad"
+  339  git branch -M main
+  340  git push -u origin main
+  341  ls
+  342   pwd
+  343  cd /
+  344  ls
+  345  ls -al
+  346  clear
+  347  cd /c
+  348  ls
+  349  cd Users
+  350  cd ..
+  351  cd users
+  352  ls
+  353  cd ..
+  354  cd u
+  355  cd users/
+  356  ls
+  357  cd Sara/
+  358  lls
+  359  ls
+  360  cd ..
+  361  cd ..
+  362  cd ..
+  363  cd ..
+  364  cd ..
+  365  ls
+  366  ls
+  367  pwd
+  368  cd ..
+  369  cd
+  370  clear
+  371  cd ..
+  372  ls
+  373  cd public/
+  374  ls
+  375  cd ..}
+  376  cd ..
+  377  cd ..
+  378  cd ..
+  379  ls
+  380  git init
+  381  git status
+  382  git commit -m "Subiendo actividad 1 febrero"
+  383  git branch -M main
+  384  git commit -m "Subiendo actividad 1 febrero"
+  385  git remote add origin https://github. com/sara-34/curso-profesional-git-git-hub-platzi.git
+  386  git add .
+  387  git remote add origin https://github. com/sara-34/curso-profesional-git-git-hub-platzi.git
+  388  git commit -m "Subiendo actividad 1 febrero"
+  389  git init
+  390  git status
+  391  git commit -m "actividad"
+  392  git init
+  393  git status
+  394  git add .
+  395  git status
+  396  git commit -m "Subiendo apuntes Git"
+  397  git branch -M main
+  398  git push -u origin main
+  399  git init
+  400  git status
+  401  git add .
+  402  git status
+  403  git commit -m "Actividad"
+  404  git branch -M main
+  405  git remote add origin https://github. com/sara-34/curso-profesional-git-git-hub-platzi.git
+  406  git remote add origin https://github.com/sara-34/curso-profesional-git-git-hub-platzi.git
+  407  git push -u origin main
+  408  mkdir proyecto1}
+  409  mkdir proyecto1
+  410  ls
+  411  cd proyecto1/
+  412  touch vacio.txt
+  413  ls
+  414  ls -al
+  415  cd .
+  416  cat vacio.txt
+  417   history
+  418   history
+  419  rm vacio.txt
+  420  ls
+  421  clear
+  422  pwd
+  423  git init
+  424  ls -al
+  425  code
+  426  git status
+  427  git add .
+  428  git status
+  429  git rm --cached Hola mundo.txt
+  430  git rm --cached "Hola mundo.txt"
+  431  git status
+  432  git add "Hola mundo.txt"
+  433  git status
+  434  git commit -m "este es el primer commit"
+  435  git config
+  436  git config --list
+  437   git status
+  438  cat "Hola mundo.txt"
+  439  git log "Hola mundo.txt"
+  440  git show "Hola mundo.txt"
+  441  pwd
+  442  ls
+  443  code "Hola mundo.txt"
+  444  git add .
+  445  git commit -m "Agregando"
+  446  git commit
+  447  git commit -m "Hola mundo"
+  448  git add .
+  449  git status
+  450  git show
+  451  git log "Hola mundo.txt"
+  452  git diff efec8bdad96d49ffb799fabbbd766ea40538874e
+  453  git diff efec8bdad96d49ffb799fabbbd766ea40538874e 4974c5518fff7da0e9707ce4a62906400b8695ee
+  454  git log
+  455  git reset 4974c5518fff7da0e9707ce4a62906400b8695ee --hard
+  456  cat "Hola mundo.txt"
+  457  git log
+  458  code
+  459  git status
+  460  ls
+  461  git add .
+  462  ls
+  463  git status
+  464  git status
+  465  git diff
+  466  git add .
+  467  git status
+  468  git commit -m "mi proyecto real con html y css"
+  469  git status
+  470  git log
+  471  git add .
+  472  git commit -m "cambio de vida"
+  473  git add .
+  474  git commit -m "cambio de su maestria"
+  475  git log
+  476  git log -- stat
+  477  git log --stat
+  478  git checkout efec8bdad96d49ffb799fabbbd766ea40538874e "Hola mundo.txt"
+  479  git status
+  480  git checkout master "Hola mundo.txt"
+  481  git checkout main "Hola mundo.txt"
+  482  git checkout efec8bdad96d49ffb799fabbbd766ea40538874e "Hola mundo.txt"
+  483  git add .
+  484  git commit -m "Reemplazo de version"
+  485  git log
+  486  git log --stat
+  487  pwd
+  488  clear
+  489  cd
+  490  cd ..
+  491  cd
+  492  git config -l
+  493  ssh-keygen -t rsa -b 4096 -C "saritaariaslondono12@gmail.com"
+  494  eval $(ssh-agent -s)
+  495  ssh-add ~/.ssh/id_rsa
+  496  cd proyecto1/
+  497  ls
+  498  cd actividades/
+  499  ls
+  500  cd ..
+  501  cd actividades/
+  502  git remote -v
+  503  git remote set-url origin git@github.com:sara-34/curso-profesional-git-git-hub-platzi.git
+  504  git remote -v
+  505  git pull
+  506  git pull origin main
+  507  git status
+  508  git diff
+  509  git commit -am "Actualizacion 2.0"
+  510  git pull origin main
+  511  git push origin main
+  512  clear
+  513  git log
+  514  git log --all --graph
+  515  git log --all --graph --decorate --oneline
+  516  alias arbolito="git log --all --graph --decorate --oneline"
+  517  arbolito
+  518  git tag -a v0.1 -m "resultado" e0eef52
+  519  git tag
+  520  git show-ref --tag
+  521  history
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git pull origin main
+From github.com:sara-34/curso-profesional-git-git-hub-platzi
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git push origin --tags
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 165 bytes | 82.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:sara-34/curso-profesional-git-git-hub-platzi.git
+ * [new tag]         v0.1 -> v0.1
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ arbolito
+* 35f446e (HEAD -> main, origin/main) Actualizacion 2.0
+*   5848c33 Solucion de conflicto
+|\
+| * a96c99d (cabecera) modifique la cabecera
+* | f2b3f5d Agrego suscripcion
+|/
+*   733da9d Merge branch 'cabecera'
+|\
+| * fc9b968 Finalizada la cabecera con diseño azul
+* | 48a228d Agregado el parrafo
+| | * d805789 (html) Modificando html
+| |/
+| * de91a35 ines starting
+|/
+* bf4c661 Modificando archivo
+* e0eef52 (tag: v0.1) Actividad
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ ^C
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git tag -a dormido -m "jnfjvnfinvfn" 5848c33
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git pull origin main
+From github.com:sara-34/curso-profesional-git-git-hub-platzi
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git push origin --tags
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 168 bytes | 168.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:sara-34/curso-profesional-git-git-hub-platzi.git
+ * [new tag]         dormido -> dormido
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git tag
+dormido
+v0.1
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git tag -d dormido
+Deleted tag 'dormido' (was a542b86)
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git tag
+v0.1
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git pull origin main
+From github.com:sara-34/curso-profesional-git-git-hub-platzi
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git push origin --tag
+Everything up-to-date
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git push origin :ref/tags/dormido
+error: unable to delete 'ref/tags/dormido': remote ref does not exist
+error: failed to push some refs to 'github.com:sara-34/curso-profesional-git-git-hub-platzi.git'
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git push origin :refs/tags/dormido
+To github.com:sara-34/curso-profesional-git-git-hub-platzi.git
+ - [deleted]         dormido
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$ git branch
+  cabecera
+  html
+* main
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (main)
+$
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (header)
+$ git add imagenes/dragon.png
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (header)
+$ git status
+On branch header
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Imagenes/dragon.png
+
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (header)
+$ git commit -am "icono header"
+[header 4102926] icono header
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 actividades/Imagenes/dragon.png
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (header)
+$ git pull origin header
+From github.com:sara-34/curso-profesional-git-git-hub-platzi
+ * branch            header     -> FETCH_HEAD
+Already up to date.
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (header)
+$ git push origin header
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 34.70 KiB | 5.78 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:sara-34/curso-profesional-git-git-hub-platzi.git
+   35f446e..4102926  header -> header
+
+Sara@LAPTOP-8G48F3OK MINGW64 ~/proyecto1/actividades (header)
+$
+
+
+
+
+
